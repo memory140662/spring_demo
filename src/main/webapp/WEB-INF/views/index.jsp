@@ -5,12 +5,12 @@
 <head>
     <meta charset="UTF-8" content="text/html">
 </head>
-<body onload="goPage('/employee/list');">
+<body onload="goPage('employee/list');">
     <table>
         <tr>
-            <td><a href="#" onclick="goPage('/employee/list')">首頁</a></td>
-            <td><a href="#" onclick="goPage('/employee/toRegistered')">註冊</a></td>
-            <td><a href="#" onclick="goPage('/employee/toModify')">管理</a></td>
+            <td><a href="#" onclick="goPage('employee/list')">首頁</a></td>
+            <td><a href="#" onclick="goPage('employee/toRegistered')">註冊</a></td>
+            <td><a href="#" onclick="goPage('employee/toModify')">管理</a></td>
         </tr>
     </table>
     <iframe id="content" style="border-width: 0; width: 100%;">
