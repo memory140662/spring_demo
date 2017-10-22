@@ -2,7 +2,7 @@ Java Spring Demo.
 
 You should modify the db source in <a href="src/main/java/tw/com/demo/config/APConfig.java" >this.</a>
 
-And you should doing something follow below
+And you should do something follow below
 
 On Eclipse :
     
