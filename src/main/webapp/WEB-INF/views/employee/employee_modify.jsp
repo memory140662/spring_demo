@@ -28,13 +28,13 @@
         <tbody>
             <c:forEach items="${employees}" var="employee">
                 <tr>
-                    <form action="/employee/update" method="post">
+                    <form action="<%= application.getContextPath() %>/employee/update" method="post">
                         <input type="hidden" name="id" value="${employee.id}">
                         <input type="hidden" name="username" value="${employee.username}">
                         <td>${employee.username}</td>
                         <td><input type="password" name="password" value="${employee.password}"></td>
                         <td><button type="submit">Update</button></td>
-                        <td><a href="/employee/delete?id=${employee.id}">Delete</a></td>
+                        <td><a href="<%= application.getContextPath() %>/employee/delete?id=${employee.id}">Delete</a></td>
                     </form>
                 </tr>
 
