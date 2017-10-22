@@ -9,5 +9,8 @@ On Eclipse :
 1. Right-click on this project.
 2. Choice "Run as", then choice "Maven install". 
 3. Ok. Let's start your Tomcat server or others and add this project.
+
+
+p.s You don't create tables by yourself.
     
     
