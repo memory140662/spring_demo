@@ -16,6 +16,6 @@
     <iframe id="content" style="border-width: 0; width: 100%;">
 
     </iframe>
-    <script type="text/javascript" src="/resources/controller.js" ></script>
+    <script type="text/javascript" src="<%= application.getContextPath() %>/resources/controller.js" ></script>
 </body>
 </html>
