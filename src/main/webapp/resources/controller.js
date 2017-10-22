@@ -4,5 +4,3 @@ function goPage(page) {
         content.src = page;
     }
 }
-
-goPage('/employee/list');

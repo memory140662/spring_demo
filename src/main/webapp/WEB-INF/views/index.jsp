@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8" content="text/html">
 </head>
-<body>
+<body onload="goPage('/employee/list');">
     <table>
         <tr>
             <td><a href="#" onclick="goPage('/employee/list')">首頁</a></td>
