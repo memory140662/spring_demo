@@ -11,3 +11,4 @@ On Eclipse :
 3. Ok. Let's start your Tomcat server or others and add this project.
     
     
+p.s You don't create tables by yourself.
