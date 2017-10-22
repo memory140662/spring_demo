@@ -6,7 +6,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
@@ -35,7 +34,6 @@ public class APConfig extends WebMvcConfigurerAdapter {
     /**
      * 導頁設定
      *
-     * @return
      */
     @Bean
     public InternalResourceViewResolver jspViewResolver() {
@@ -48,7 +46,6 @@ public class APConfig extends WebMvcConfigurerAdapter {
     /**
      * 資源設定，此資源為webapp裡面的資料
      *
-     * @param registry
      */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
@@ -59,13 +56,14 @@ public class APConfig extends WebMvcConfigurerAdapter {
 
     /**
      * 以下為 資料庫連線的相關設定
-     * @return
+     *
      */
     @Bean
     public DataSource dataSource() {
+
 //        DriverManagerDataSource mySqlDataSource = new DriverManagerDataSource();
 //        mySqlDataSource.setDriverClassName("com.mysql.jdbc.Driver");
-//        mySqlDataSource.setUrl("jdbc:mysql://192.168.99.100:3306/spring_demo?useSSL=false");
+//        mySqlDataSource.setUrl("jdbc:mysql://localhost:3306/spring_demo?useSSL=false");
 //        mySqlDataSource.setUsername("root");
 //        mySqlDataSource.setPassword("1234");
 
@@ -113,8 +111,6 @@ public class APConfig extends WebMvcConfigurerAdapter {
         Properties properties = new Properties();
         properties.setProperty("spring.jpa.show-sql", "true");
         properties.setProperty("spring.jpa.hibernate.ddl-auto ", "create-update");
-//        properties.setProperty("spring.jpa.properties.hibernate.dialect", "org.hibernate.dialect.Oracle12cDialect");
-//        properties.setProperty("spring.jpa.properties.hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
         return properties;
     }
 }

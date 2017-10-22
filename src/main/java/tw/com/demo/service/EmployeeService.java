@@ -10,8 +10,12 @@ import java.util.List;
 @Service
 public class EmployeeService {
 
-    @Autowired
     private EmployeeRepository repository;
+
+    @Autowired
+    public void setRepository(EmployeeRepository repository) {
+        this.repository = repository;
+    }
 
     public void addEmployee(Employee employee) {
         repository.save(employee);
