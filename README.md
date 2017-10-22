@@ -1,17 +1,8 @@
 Java Spring Demo.
 
-You should modify the db source in <a href="src/main/java/tw/com/demo/config/APConfig.java" >this.</a>
+You should modify the db source in <a href="src/main/java/tw/com/demo/config/APConfig.java" >this.</a>    
 
-And you should do something follow below
-
-On Eclipse :
-    
-1. Right-click on this project.
-2. Choice "Run as", then choice "Maven install". 
-3. Ok. Let's start your Tomcat server or others and add this project.
-    
-
-When you try to connect to Oracle db, have some exception like:
+When you try to connect to db, have some exception like:
 
     javax.servlet.ServletException: Servlet.init() for servlet dispatcherServlet threw exception
     	org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:506)

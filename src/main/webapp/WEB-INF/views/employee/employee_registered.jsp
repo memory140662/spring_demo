@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<form action="/employee/registered" method="post">
+<form action="<%= application.getContextPath() %>/employee/registered" method="post">
     <table>
         <tr>
             <td>Username</td>
